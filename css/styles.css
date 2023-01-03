@@ -180,7 +180,7 @@ body {
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .container {
     width: 736px;
   }
@@ -193,7 +193,7 @@ body {
 }
 
 /* ================== Mobile ================== */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .menu,
   .menu-contacts,
   .studio-features-svg-bg {
@@ -282,6 +282,52 @@ body {
   fill: var(--color-white);
   border: none;
 }
+
+.mobile-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 284px;
+}
+
+.mobile-menu-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: var(--color-dark);
+}
+
+.mobile-contact-phone-number {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  color: var(--color-dark);
+}
+
+.mobile-menu-contacts-item {
+  margin-top: 40px;
+  margin-bottom: 48px;
+}
+
+.mobile-contact-mail {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--color-text);
+}
+
+.mobile-social-list {
+  display: flex;
+  gap: 56px;
+}
+
+.mobile-menu-link:active,
+.mobile-contact-mail:active,
+.mobile-contact-phone-number:active {
+  color: var(--color-primary-brand);
+}
 /* ================= / Mobile menu ================= */
 
 /* =================  Tablet ================= */
@@ -319,7 +365,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: auto;
+    margin-left: 118px;
   }
 
   .menu-contacts-item {
@@ -494,7 +540,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* width: 428px; */
   width: 100vw;
   height: 432px;
   margin-left: auto;
@@ -556,8 +601,9 @@ body {
       url("../images/hero/tablet-bg.jpg");
     padding-top: 112px;
     padding-bottom: 204px;
-    width: 768px;
+    width: 100vw;
   }
+
   .hero-title {
     font-weight: 700;
     font-size: 56px;
@@ -752,7 +798,8 @@ body {
 .social-list-link:hover,
 .social-list-link:focus {
   background-color: #31d0aa;
-} */
+}
+*/
 
 /* ================  /Our Team-Mobile ================ */
 
@@ -971,7 +1018,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   padding-top: 96px;
-  }
+}
 
 .social-footer-list {
   display: flex;
@@ -1043,9 +1090,9 @@ body {
   border: 0px;
   width: 165px;
   height: 40px;
- 
+
   margin: 0 auto;
-  }
+}
 
 .footer-form-submit:hover,
 .footer-form-submit:focus {
