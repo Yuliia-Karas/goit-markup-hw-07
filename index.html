@@ -37,7 +37,9 @@
             </li>
           </ul>
         </nav>
+
         <div>
+          <!-- Mobile menu burger -->
           <button type="button" class="mobile-menu-open js-open-menu">
             <svg class="mobile-menu-open-icon">
               <use
@@ -47,16 +49,17 @@
               ></use>
             </svg>
           </button>
+          <!-- Contacts -->
           <ul class="menu-contacts list">
             <li class="menu-contacts-item">
-              <a class="contact-mail link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+              <a class="contact-mail link" href="mailto:info@devstudio.com">
+                info@devstudio.com
+              </a>
             </li>
             <li>
-              <a class="contact-phone-number link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
+              <a class="contact-phone-number link" href="tel:+110001111111">
+                +11 (000) 111-11-11
+              </a>
             </li>
           </ul>
         </div>
@@ -84,54 +87,56 @@
               <a class="mobile-menu-link link" href="">Contacts</a>
             </li>
           </ul>
-          <ul class="mobile-menu-contacts list">
-            <li>
-              <a
-                class="mobile-contact-phone-number link"
-                href="tel:+110001111111"
-              >
-                +11 (000) 111-11-11
-              </a>
-            </li>
-            <li class="mobile-menu-contacts-item">
-              <a
-                class="mobile-contact-mail link"
-                href="mailto:info@devstudio.com"
-                >info@devstudio.com
-              </a>
-            </li>
-          </ul>
-          <ul class="mobile-social-list list">
-            <li class="social-list-item">
-              <a href="#" class="social-list-link">
-                <svg class="social-list-icon" width="16" height="16">
-                  <use href="./images/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list-item">
-              <a href="#" class="social-list-link">
-                <svg class="social-list-icon" width="16" height="16">
-                  <use href="./images/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
+          <div class="mobile-menu-bottom">
+            <ul class="mobile-menu-contacts list">
+              <li>
+                <a
+                  class="mobile-contact-phone-number link"
+                  href="tel:+110001111111"
+                >
+                  +11 (000) 111-11-11
+                </a>
+              </li>
+              <li class="mobile-menu-contacts-item">
+                <a
+                  class="mobile-contact-mail link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="mobile-social-list list">
+              <li class="social-list-item">
+                <a href="#" class="social-list-link">
+                  <svg class="social-list-icon" width="16" height="16">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list-item">
+                <a href="#" class="social-list-link">
+                  <svg class="social-list-icon" width="16" height="16">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
 
-            <li class="social-list-item">
-              <a href="#" class="social-list-link">
-                <svg class="social-list-icon" width="16" height="16">
-                  <use href="./images/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list-item">
-              <a href="" class="social-list-link">
-                <svg class="social-list-icon" width="16" height="16">
-                  <use href="./images/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+              <li class="social-list-item">
+                <a href="#" class="social-list-link">
+                  <svg class="social-list-icon" width="16" height="16">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list-item">
+                <a href="" class="social-list-link">
+                  <svg class="social-list-icon" width="16" height="16">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -202,7 +207,7 @@
           </div>
         </section>
         <!--Чим ми займаємося-->
-        <!-- <section class="doing-list-section">
+        <section class="doing-list-section">
           <div class="container">
             <h2 class="section-title">What are we doing</h2>
             <ul class="doing-list list">
@@ -232,7 +237,7 @@
               </li>
             </ul>
           </div>
-        </section> -->
+        </section>
         <!--Наша команда-->
         <section class="team">
           <div class="container">
@@ -537,7 +542,7 @@
       </div>
     </footer>
     <!-- Backdrop -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-btn-icon" width="8" height="8">
@@ -616,7 +621,7 @@
       </div>
     </div>
 
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
