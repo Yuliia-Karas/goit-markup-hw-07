@@ -99,8 +99,6 @@ body {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
-  margin-top: 103px;
-  margin-bottom: 72px;
   text-align: center;
   text-transform: capitalize;
 }
@@ -158,6 +156,9 @@ body {
   color: var(--color-light);
 }
 
+.section-title {
+  margin-bottom: 72px;
+}
 /* ============== /Components ================= */
 /*#endregion*/
 
@@ -166,7 +167,7 @@ body {
 
 .container {
   padding-left: 15px;
-  padding-right: 15px;  
+  padding-right: 15px;
 }
 
 @media screen and (min-width: 480px) {
@@ -332,10 +333,21 @@ body {
   gap: 56px;
 }
 
+.mobile-menu-link:hover,
+.mobile-contact-mail:hover,
+.mobile-contact-phone-number:hover,
+.mobile-menu-link:focus,
+.mobile-contact-mail:focus,
+.mobile-contact-phone-number:focus,
 .mobile-menu-link:active,
 .mobile-contact-mail:active,
 .mobile-contact-phone-number:active {
   color: var(--color-primary-brand);
+}
+
+.studio-section-features {
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 /* ================= / Mobile menu ================= */
 
@@ -345,7 +357,7 @@ body {
   width: 100%;
   height: 4px;
   left: 0px;
-  bottom: -24px;
+  bottom: -15px;
   background-color: var(--color-primary-brand);
   border-radius: 2px;
 }
@@ -401,14 +413,11 @@ body {
 /*#region */
 
 .hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 432px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 428px;
+  padding-top: 112px;
+  padding-bottom: 112px;
+  text-align: center;
+
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -463,7 +472,7 @@ body {
         rgba(46, 47, 66, 0.7)
       ),
       url("../images/hero/tablet-bg.jpg");
-    width: 100vw;
+    width: 768px;
   }
 
   .hero-title {
@@ -474,7 +483,6 @@ body {
     text-align: center;
     color: var(--color-white);
     width: 494px;
-    padding-top: 112px;
   }
 
   .modal-btn {
@@ -498,7 +506,10 @@ body {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 100vw;
+    width: 1440px;
+    padding-top: 192px;
+    padding-bottom: 192px;
+    text-align: center;
 
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -528,6 +539,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
+  gap: 72px;
 }
 
 .section-subtitle {
@@ -537,7 +549,6 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--color-dark);
-  margin-top: 72px;
 }
 
 .section-paragraph {
@@ -558,7 +569,6 @@ body {
   background-color: var(--color-light);
   padding-top: 96px;
   padding-bottom: 120px;
-  margin-top: 96px;
 }
 
 .our-team-list {
@@ -605,13 +615,13 @@ body {
 .social-list-link:hover,
 .social-list-link:focus {
   background-color: #31d0aa;
+  border: 0;
 }
-*/
 
 /* ================  /Our Team-Mobile ================ */
 
 /* =============  Our Customers-Mobile ================ */
- .our-customers {
+.our-customers {
   padding-top: 104px;
   padding-bottom: 104px;
 }
@@ -622,7 +632,6 @@ body {
   justify-content: center;
   column-gap: 16px;
   row-gap: 72px;
-  width: 396px;
 }
 
 .our-customers-link {
@@ -696,7 +705,7 @@ body {
 }
 
 .portfolio-item:not(:last-child) {
-  padding-right: 24px;
+  margin-right: 24px;
 }
 
 .portfolio-container {
@@ -721,8 +730,7 @@ body {
 /* ================  Footer-Mobile ================ */
 .footer-container {
   background-color: var(--color-dark);
-  margin-top: 97px;
-  padding-top: 96x;
+  padding-top: 96px;
   padding-bottom: 96px;
 }
 
@@ -736,7 +744,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--color-accent);
   width: 264px;
-  height: 110px;
   margin-top: 16px;
 }
 
@@ -745,7 +752,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 96px;
+  gap: 72px;
 }
 
 .social-footer-list {
@@ -784,14 +791,13 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-white);
-  margin-top: 72px;
   margin-bottom: 16px;
   text-align: center;
 }
 
 .footer-form-input {
   color: var(--color-white);
-  width: 396px;
+  width: 300px;
   height: 40px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -799,7 +805,6 @@ body {
   background-color: transparent;
   padding-left: 16px;
   outline: none;
-  margin-bottom: 16px;
 }
 
 .footer-form-submit {
@@ -820,6 +825,7 @@ body {
   height: 40px;
 
   margin: 0 auto;
+  margin-top: 16px;
 }
 
 .footer-form-submit:hover,
@@ -1101,10 +1107,6 @@ body {
     margin-left: 118px;
   }
 
-  .menu-contacts-item {
-    margin-right: 40px;
-  }
-
   .menu-item {
     position: relative;
   }
@@ -1140,8 +1142,8 @@ body {
   .contact-mail,
   .contact-phone-number {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 12px;
+    line-height: 1.33;
     letter-spacing: 0.02em;
     color: var(--color-text);
 
@@ -1154,12 +1156,17 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-left: 24px;
+    row-gap: 72px;
+    column-gap: 24px;
   }
   .section-subtitle,
   .studio-features-item {
     text-align: left;
   }
 
+  .our-customers-container {
+    width: 552px;
+  }
   .our-customers-link {
     width: 168px;
   }
@@ -1186,6 +1193,9 @@ body {
   .footer-form-input {
     width: 264px;
   }
+  .footer-form-submit {
+    margin-top: 0;
+  }
 
   .logo-footer,
   .social-media-paragraph,
@@ -1208,6 +1218,12 @@ body {
     flex-direction: row;
     align-items: center;
     margin-left: auto;
+    gap: 40px;
+  }
+  .contact-mail,
+  .contact-phone-number {
+    font-size: 16px;
+    line-height: 1.5;
   }
 
   .studio-section-features {
@@ -1250,16 +1266,15 @@ body {
   }
 
   .section-subtitle {
-    font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--color-dark);
-    margin-top: 8px;
+    margin-top: 0;
   }
 
   .section-paragraph {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -1267,9 +1282,17 @@ body {
     margin-top: 8px;
   }
 
+  .our-customers-container {
+    width: 100%;
+  }
   .our-customers {
     padding-top: 120px;
+    padding-bottom: 120px;
     margin: 0 auto;
+  }
+
+  .our-customers-list {
+    gap: 24px;
   }
 
   .footer-container {
@@ -1290,14 +1313,23 @@ body {
   .doing-list {
     display: flex;
     justify-content: space-between;
+    margin-top: 72px;
   }
 
   .doing-list-section {
-    display: flex;
+    display: block;
   }
 
   .section-title {
     margin-top: 0;
   }
-  /* =================  /What are we doing ================== */
+  /* ============  /What are we doing ============ */
+
+  /* ==================  Our Team-Desktop ================== */
+  .team {
+    background-color: var(--color-light);
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  /* ==================  Our Team-Desktop ================== */
 }

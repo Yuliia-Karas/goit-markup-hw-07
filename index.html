@@ -74,9 +74,7 @@
           </button>
           <ul class="mobile-menu-list list">
             <li class="menu-item">
-              <a class="mobile-menu-link link current" href="./index.html"
-                >Studio</a
-              >
+              <a class="mobile-menu-link link" href="./index.html">Studio</a>
             </li>
             <li class="menu-item">
               <a class="mobile-menu-link link" href="./portfolio.html"
@@ -213,6 +211,7 @@
             <ul class="doing-list list">
               <li>
                 <img
+                  srcset="./images/computer.jpg 1x, ./images/computer@2x.jpg 2x"
                   src="./images/computer.jpg"
                   alt="computer"
                   width="360"
@@ -221,6 +220,10 @@
               </li>
               <li>
                 <img
+                  srcset="
+                    ./images/smartphone.jpg    1x,
+                    ./images/smartphone@2x.jpg 2x
+                  "
                   src="./images/smartphone.jpg"
                   alt="smartphone"
                   width="360"
@@ -229,6 +232,7 @@
               </li>
               <li>
                 <img
+                  srcset="./images/notebook.jpg 1x, ./images/notebook@2x.jpg 2x"
                   src="./images/notebook.jpg"
                   alt="notebook"
                   width="360"
@@ -420,7 +424,7 @@
         </section>
         <!-- Наші клієнти -->
         <section class="our-customers">
-          <div class="container">
+          <div class="container our-customers-container">
             <h2 class="section-title">Customers</h2>
             <ul class="our-customers-list list">
               <li>
