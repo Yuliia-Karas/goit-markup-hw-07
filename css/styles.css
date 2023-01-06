@@ -144,10 +144,6 @@ body {
   color: var(--color-primary-brand);
 }
 
-.logo-header {
-  margin-right: 77px;
-}
-
 .logo-dark {
   color: var(--color-dark);
 }
@@ -168,6 +164,31 @@ body {
 .container {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media screen and (max-width: 480px) {
+  .hero {
+    max-width: 767px;
+  }
+ 
+}
+
+
+@media screen and (max-width: 767px) {
+ .footer-form-input {
+    color: var(--color-white);
+    width: 100%;
+    max-width: 396px;
+  }
+
+   
+.footer-position {
+  display: flex;
+  flex-direction: column;
+  
+    gap: 72px;
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -305,7 +326,7 @@ body {
 
 .mobile-contact-phone-number {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 8vw;
   line-height: 40px;
   color: var(--color-dark);
 }
@@ -330,7 +351,7 @@ body {
 .mobile-social-list {
   display: flex;
   justify-content: center;
-  gap: 56px;
+  gap: 45px;
 }
 
 .mobile-menu-link:hover,
@@ -372,6 +393,10 @@ body {
 
 .menu-item:not(:last-child) {
   margin-right: 40px;
+}
+
+.menu-contacts-item:not(:last-child) {
+  margin-bottom: 4px;
 }
 
 .menu-link {
@@ -417,7 +442,6 @@ body {
 /*#region */
 
 .hero {
-  width: 428px;
   padding-top: 112px;
   padding-bottom: 112px;
   margin-left: auto;
@@ -564,6 +588,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--color-text);
   margin-top: 8px;
+  text-align: left;
 }
 
 /* ==================  /Особливості студії mobile ================== */
@@ -691,6 +716,10 @@ body {
   mix-blend-mode: normal;
 }
 
+.card-color:hover .overlay,
+.card-color:focus.overlay {
+  transform: translate(0, 0);
+}
 
 .portfolio-card:hover .overlay {
   transform: translate(0, 0);
@@ -743,6 +772,8 @@ body {
   background-color: var(--color-dark);
   padding-top: 96px;
   padding-bottom: 96px;
+  margin-left:auto ;
+  margin-right: auto;
 }
 
 .logo-footer {
@@ -758,13 +789,6 @@ body {
   margin-top: 16px;
 }
 
-.footer-position {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 72px;
-}
 
 .social-footer-list {
   display: flex;
@@ -808,7 +832,6 @@ body {
 
 .footer-form-input {
   color: var(--color-white);
-  width: 300px;
   height: 40px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1098,6 +1121,7 @@ body {
   .page-nav {
     display: flex;
     align-items: center;
+    margin-right: auto;
   }
 
   .page-header-container {
@@ -1162,13 +1186,21 @@ body {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+.features-first {
+  display: flex;
+  gap: 24px;
+}
 
   .studio-features {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-left: 24px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     row-gap: 72px;
     column-gap: 24px;
+  }
+
+  .studio-features-item {
+        flex-basis: calc((100% - 24px) / 2);
   }
   .section-subtitle,
   .studio-features-item {
@@ -1193,6 +1225,7 @@ body {
     margin: 0 auto;
     align-items: flex-start;
     padding-left: 108px;
+    
   }
   .footer-info {
     display: block;
@@ -1202,9 +1235,7 @@ body {
     display: flex;
     gap: 24px;
   }
-  .footer-form-input {
-    width: 264px;
-  }
+
   .footer-form-submit {
     margin-top: 0;
   }
@@ -1218,6 +1249,12 @@ body {
   .footer-form-paragraph {
     margin-top: 0;
   }
+  .footer-form-input {
+    width: 264px;
+  }
+  .logo {
+  margin-right: 120px;
+}
 }
 /* ================= / Tablet ================= */
 
@@ -1229,6 +1266,9 @@ body {
     padding-bottom: 24px;
   }
 
+.logo {
+  margin-right: 77px;
+}
   .menu-contacts {
     display: flex;
     flex-direction: row;
@@ -1250,8 +1290,11 @@ body {
   .studio-features {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-between;
     margin-left: 0;
+    row-gap:24px;
+    column-gap: 0;
   }
 
   .studio-features-svg {
@@ -1267,10 +1310,6 @@ body {
     background-color: #f4f4fd;
     border-radius: 4px;
     margin-bottom: 8px;
-  }
-
-  .studio-features-item:not(:last-child) {
-    margin-right: 24px;
   }
 
   .studio-features-item {
@@ -1299,7 +1338,9 @@ body {
   }
 
   .our-customers-container {
-    width: 100%;
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .our-customers {
     padding-top: 120px;
@@ -1334,6 +1375,8 @@ body {
 
   .doing-list-section {
     display: block;
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 
   .section-title {
