@@ -717,7 +717,7 @@ body {
 }
 
 .card-color:hover .overlay,
-.card-color:focus.overlay {
+.card-color:focus .overlay {
   transform: translate(0, 0);
 }
 
